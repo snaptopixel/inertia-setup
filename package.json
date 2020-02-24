@@ -1,15 +1,35 @@
 {
   "name": "myapp",
   "private": true,
+  "scripts": {
+    "start": "run-p start:*",
+    "start:devserver": "./bin/webpack-dev-server",
+    "start:rails": "rails server"
+  },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@inertiajs/inertia": "^0.1.7",
+    "@inertiajs/inertia-react": "^0.1.4",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.2.2",
-    "turbolinks": "^5.2.0"
+    "@types/react": "^16.9.22",
+    "@types/react-dom": "^16.9.5",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "tailwindcss": "^1.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "react-hot-loader": "^4.12.19",
     "webpack-dev-server": "^3.10.3"
   }
 }
